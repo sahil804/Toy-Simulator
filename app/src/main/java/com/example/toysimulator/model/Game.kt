@@ -27,7 +27,6 @@ class Game(private val maxRows: Int, private val maxColums: Int) {
 
     private fun update(position: Position) {
         clear()
-        var index = position.xAxis * maxColums + position.yAxis
         list.find { it.index == position.xAxis * maxColums + position.yAxis }?.image = Image.valueOf(position.direction.toString())
         liveList.value = list
     }

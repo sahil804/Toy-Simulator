@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun placeClick(view: View) {
-        placeToy(Integer.parseInt(spXAxis.selectedItem.toString()),Integer.parseInt(spXAxis.selectedItem.toString())
+        placeToy(Integer.parseInt(spXAxis.selectedItem.toString()),Integer.parseInt(spYAxix.selectedItem.toString())
             , Direction.getDirection(spDirection.selectedItem.toString()))
         tvReport.visibility = View.GONE
     }
